@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+
+</head>
+
+<body>
+
+
+    <h1 class="text-center text-info my-5">Our Products</h1>
+
+
+    <div class="w-75 m-auto text-info">
+        <div class="my-5 " id="error" style="font-size: 35px; color: #fff; text-align: center;"></div>
+        <form>
+            <div class="mb-4">
+                <label class="form-label">Product Name</label>
+                <input id="pNameId" class="form-control" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Product Price</label>
+                <input id="pPriceId" class="form-control" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Product Category</label>
+                <input id="pCatId" class="form-control" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Product Description</label>
+                <textarea id="pDescId" class="form-control" required></textarea>
+            </div>
+
+
+            <button id="btn" onclick="addProduct()" class="btn btn-info text-white" type="submit">Add Product</button>
+
+        </form>
+    </div>
+
+
+    <input onkeyup="searchProduct(this.value)" class="form-control w-50 mx-auto my-5" placeholder="Search Product">
+
+
+    <table class="table w-75 mx-auto my-5">
+        <thead class="text-white bg-dark">
+            <th>index</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Categoty</th>
+            <th>Description</th>
+            <th class="text-warning">Update</th>
+            <th class="text-danger">Delete</th>
+
+        </thead>
+        <tbody id="tBody">
+
+        </tbody>
+    </table>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+
+</body>
+
+</html>
